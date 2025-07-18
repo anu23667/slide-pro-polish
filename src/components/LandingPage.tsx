@@ -102,7 +102,7 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <div className="upload-zone max-w-2xl mx-auto mb-8 animate-glow">
+          <div className="upload-zone-glow max-w-2xl mx-auto mb-8">
             <Upload className="mx-auto mb-4 h-16 w-16 text-primary" />
             <h3 className="text-2xl font-semibold mb-2">Drop your deck here</h3>
             <p className="text-muted-foreground mb-6">Drag and drop your presentation or click to browse</p>
@@ -198,15 +198,15 @@ const LandingPage = () => {
             </div>
             
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-green-400 text-center">After</h3>
-              <Card className="overflow-hidden border-green-500/50 shadow-glow">
+              <h3 className="text-2xl font-bold text-accent text-center">After</h3>
+              <Card className="overflow-hidden border-accent/50 shadow-glow">
                 <img 
                   src={goodDeckImage} 
                   alt="Improved presentation structure" 
                   className="w-full h-80 object-cover"
                 />
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-2 text-green-400 mb-2">
+                  <div className="flex items-center gap-2 text-accent mb-2">
                     <CheckCircle className="w-4 h-4" />
                     <span className="text-sm">Optimized</span>
                   </div>

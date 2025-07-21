@@ -6,38 +6,39 @@
 
 @layer base {
   :root {
-    /* Dark theme - Jet Black base with Cool Grey accents */
+    /* Dark theme - Deep charcoal with premium contrast */
     --background: 0 0% 7%;
-    --foreground: 220 14% 96%;
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 11%;
-    --card-foreground: 220 14% 96%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 11%;
-    --popover-foreground: 220 14% 96%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Primary Vivid Red accent #EF4444 */
-    --primary: 0 84% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 0 84% 70%;
-    --primary-glow: 0 84% 65%;
+    /* Primary Near-white for CTAs in dark theme */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 8%;
+    --primary-light: 0 0% 95%;
+    --primary-glow: 0 0% 92%;
 
-    /* Cool Grey accent */
-    --accent: 220 13% 69%;
-    --accent-foreground: 220 39% 11%;
+    /* Vivid Red accent preserved exactly */
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 98%;
 
-    --secondary: 220 39% 11%;
-    --secondary-foreground: 220 14% 96%;
+    /* Cool grey maintained */
+    --secondary: 0 0% 46%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 220 13% 18%;
-    --muted-foreground: 220 13% 69%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 25%;
-    --input: 0 0% 11%;
-    --ring: 0 84% 60%;
+    --border: 0 0% 20%;
+    --input: 0 0% 10%;
+    --ring: 0 0% 98%;
 
     /* Silver variations */
     --silver: 0 0% 75%;
@@ -45,17 +46,18 @@
     --silver-dark: 0 0% 65%;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(220 39% 11%), hsl(0 0% 7%));
-    --gradient-silver: linear-gradient(135deg, hsl(220 13% 69%), hsl(220 13% 75%));
-    --gradient-glow: linear-gradient(135deg, hsl(0 84% 60% / 0.1), hsl(0 84% 70% / 0.05));
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 95%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 8%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%), hsl(0 0% 5%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 8%));
+    --gradient-glow: linear-gradient(135deg, hsl(0 84% 60% / 0.1), hsl(0 84% 60% / 0.05));
     
-    /* Vivid red and cool grey shadows with transparency */
-    --shadow-glow: 0 0 20px hsl(0 84% 60% / 0.3);
+    /* Premium dark shadows */
+    --shadow-glow: 0 0 20px hsl(0 0% 98% / 0.4);
+    --shadow-glow-red: 0 0 20px hsl(0 84% 60% / 0.3);
     --shadow-glow-intense: 0 0 30px hsl(0 84% 60% / 0.5);
-    --shadow-silver: 0 0 15px hsl(220 13% 69% / 0.2);
-    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.7);
-    --shadow-subtle: 0 2px 8px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.25);
+    --shadow-subtle: 0 2px 8px hsl(0 0% 0% / 0.25);
     
     /* Animation variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

@@ -94,8 +94,8 @@ const LandingPage = () => {
         
         <div className="max-w-4xl mx-auto text-center z-10">
           <div className="animate-fade-in-up">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Polish Your Deck Like a Pro
+            <h1 className="text-6xl md:text-8xl font-bold mb-6">
+              Polish Your <span className="bg-gradient-accent bg-clip-text text-transparent">Deck</span> Like a Pro
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
               Instant feedback on structure, logic, and story — so your case decks always stand out.

@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import badDeckImage from '@/assets/bad-deck-example.jpg';
 import goodDeckImage from '@/assets/good-deck-example.jpg';
+import FileUpload from '@/components/FileUpload';
 
 const LandingPage = () => {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -102,14 +103,7 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <div className="upload-zone-glow max-w-2xl mx-auto mb-8">
-            <Upload className="mx-auto mb-4 h-16 w-16 text-primary" />
-            <h3 className="text-2xl font-semibold mb-2">Drop your deck here</h3>
-            <p className="text-muted-foreground mb-6">Drag and drop your presentation or click to browse</p>
-            <Button className="btn-glow">
-              Upload Your Deck
-            </Button>
-          </div>
+          <FileUpload />
 
           <p className="text-sm text-muted-foreground">
             Get instant AI-powered feedback on structure, flow, and logic.
@@ -266,9 +260,7 @@ const LandingPage = () => {
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Free to use. Instant feedback. No signup needed.
             </p>
-            <Button className="btn-glow text-xl px-12 py-6">
-              Upload Now
-            </Button>
+            <FileUpload buttonText="Upload Now" showDropzone={false} className="text-xl px-12 py-6" />
           </div>
         </div>
       </section>

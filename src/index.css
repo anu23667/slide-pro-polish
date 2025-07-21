@@ -162,8 +162,25 @@
     background: var(--gradient-secondary);
   }
   
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
   .bg-gradient-glow {
     background: var(--gradient-glow);
+  }
+
+  /* Enhanced gradient text effects */
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%), hsl(0 0% 98%));
+  }
+  
+  .bg-gradient-highlight {
+    background: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 65%), hsl(0 0% 95%));
   }
 
   /* Shadow utilities */

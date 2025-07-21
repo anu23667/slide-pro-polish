@@ -121,7 +121,7 @@ const LandingPage = () => {
       <section ref={addToRefs} className="scroll-reveal py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            How It <span className="bg-gradient-primary bg-clip-text text-transparent">Works</span>
+            How It <span className="bg-gradient-accent bg-clip-text text-transparent">Works</span>
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -149,7 +149,7 @@ const LandingPage = () => {
       <section ref={addToRefs} className="scroll-reveal py-20 px-6 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            What We <span className="bg-gradient-primary bg-clip-text text-transparent">Evaluate</span>
+            What We <span className="bg-gradient-accent bg-clip-text text-transparent">Evaluate</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -170,7 +170,7 @@ const LandingPage = () => {
       <section ref={addToRefs} className="scroll-reveal py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Before vs <span className="bg-gradient-primary bg-clip-text text-transparent">After</span>
+            Before vs <span className="bg-gradient-highlight bg-clip-text text-transparent">After</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -227,7 +227,7 @@ const LandingPage = () => {
       <section ref={addToRefs} className="scroll-reveal py-20 px-6 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Who It's <span className="bg-gradient-primary bg-clip-text text-transparent">For</span>
+            Who It's <span className="bg-gradient-accent bg-clip-text text-transparent">For</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -261,7 +261,7 @@ const LandingPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-glow rounded-3xl p-12 shadow-glow">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Improve Your <span className="bg-gradient-primary bg-clip-text text-transparent">Deck?</span>
+              Ready to Improve Your <span className="bg-gradient-highlight bg-clip-text text-transparent">Deck?</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Free to use. Instant feedback. No signup needed.

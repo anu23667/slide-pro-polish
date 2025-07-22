@@ -74,8 +74,10 @@ const FileUpload = ({ className = "", buttonText = "Upload Your Deck", showDropz
           disabled={isUploading}
         />
         <label htmlFor="file-upload">
-          <Button className="btn-glow" disabled={isUploading}>
-            {isUploading ? "Uploading..." : buttonText}
+          <Button className="btn-glow" disabled={isUploading} asChild>
+            <span style={{ cursor: isUploading ? 'not-allowed' : 'pointer' }}>
+              {isUploading ? "Uploading..." : buttonText}
+            </span>
           </Button>
         </label>
       </div>
@@ -93,8 +95,10 @@ const FileUpload = ({ className = "", buttonText = "Upload Your Deck", showDropz
         disabled={isUploading}
       />
       <label htmlFor="file-upload-button">
-        <Button className={`btn-glow ${className}`} disabled={isUploading}>
-          {isUploading ? "Uploading..." : buttonText}
+        <Button className={`btn-glow ${className}`} disabled={isUploading} asChild>
+          <span style={{ cursor: isUploading ? 'not-allowed' : 'pointer' }}>
+            {isUploading ? "Uploading..." : buttonText}
+          </span>
         </Button>
       </label>
     </>

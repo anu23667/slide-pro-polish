@@ -4,16 +4,18 @@ export const uploadFile = async (file: File) => {
   const formData = new FormData();
   formData.append('files', file);
   
-  const response = await fetch('https://api.uploadthing.com/api/uploadFiles', {
+  const response = await fetch(`https://api.uploadthing.com/api/uploadFiles`, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${UPLOADTHING_TOKEN}`,
+      'X-Uploadthing-Api-Key': UPLOADTHING_TOKEN,
+      'X-Uploadthing-Version': '6.4.0',
     },
     body: formData,
   });
 
   if (!response.ok) {
-    throw new Error('Upload failed');
+    const errorText = await response.text();
+    throw new Error(`Upload failed: ${errorText}`);
   }
 
   return response.json();

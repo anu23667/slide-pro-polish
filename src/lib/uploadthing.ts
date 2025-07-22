@@ -1,7 +1,4 @@
-// Decode the token to get the actual API key
-const decodedToken = JSON.parse(atob('eyJhcGlLZXkiOiJza19saXZlXzZjYTYwMzFiOGVmZmEwZDNmNTEyNzhiZjhiMzYwYTMzY2U4OGMyZjVmZDc2MDIzYTQ2NTY2MjE1ZDEwZWM4Y2YiLCJhcHBJZCI6InBsNHR4d2hydWoiLCJyZWdpb25zIjpbInNlYTEiXX0='));
-const API_KEY = decodedToken.apiKey;
-const APP_ID = decodedToken.appId;
+const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNqbmdteXhucm9ja2J3ZWZ6eWFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMxMTAyMzUsImV4cCI6MjA2ODY4NjIzNX0.Pic6CGc-J4rWpSY6oZXG1D0XGrfrBB8Dk2mdCM7XvO4'
 
 export const uploadFile = async (file: File) => {
   try {
